@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 interface CategoryCardProps {
   title: string;
   description: string;
-  image: string;
   icon?: ReactNode;
   className?: string;
 }
@@ -12,7 +11,6 @@ interface CategoryCardProps {
 export default function CategoryCard({
   title,
   description,
-  image,
   icon,
   className,
 }: CategoryCardProps) {
@@ -21,14 +19,12 @@ export default function CategoryCard({
       className={cn(
         "group relative overflow-hidden rounded-xl h-96 md:h-80 cursor-pointer transition-all duration-500",
         "hover:shadow-2xl hover:shadow-gold/20 hover:-translate-y-2",
+        "bg-gradient-to-br from-graphite-light/80 to-graphite-dark/60",
         className
       )}
     >
-      {/* Background Image - Cinematic zoom */}
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-115"
-        style={{ backgroundImage: `url(${image})` }}
-      />
+      {/* Decorative gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gold/10 via-transparent to-electric-blue/5 transition-opacity duration-700 group-hover:opacity-0" />
 
       {/* Layered overlays for depth */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/30 to-background/80" />
