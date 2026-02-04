@@ -125,8 +125,7 @@ export default function Index() {
                 tags={["Performance", "Luxury"]}
                 price="$180,000"
                 description="Twin-turbo precision."
-                gradientFrom="from-gray-800"
-                gradientTo="to-slate-900"
+                image="https://cdn.pixabay.com/photo/2018/09/19/16/31/mercedes-amg-3689076_1280.jpg"
               />
             </div>
 
@@ -138,8 +137,7 @@ export default function Index() {
                 tags={["Electric", "Innovation"]}
                 price="$115,000"
                 description="0-60 in 1.99 seconds."
-                gradientFrom="from-blue-900"
-                gradientTo="to-slate-900"
+                image="https://cdn.pixabay.com/photo/2021/03/19/11/05/tesla-6107077_1280.jpg"
               />
             </div>
 
@@ -151,8 +149,7 @@ export default function Index() {
                 tags={["Luxury", "SUV"]}
                 price="$145,000"
                 description="Premium commanding presence."
-                gradientFrom="from-amber-900"
-                gradientTo="to-gray-800"
+                image="https://cdn.pixabay.com/photo/2018/05/19/11/44/range-rover-3413126_1280.jpg"
               />
             </div>
 
@@ -164,8 +161,7 @@ export default function Index() {
                 tags={["Hypercar", "Exclusive"]}
                 price="$645,000"
                 description="Hybrid innovation redefined."
-                gradientFrom="from-red-900"
-                gradientTo="to-orange-900"
+                image="https://cdn.pixabay.com/photo/2015/03/05/21/36/lamborghini-658155_1280.jpg"
               />
             </div>
 
@@ -177,8 +173,7 @@ export default function Index() {
                 tags={["Speed", "Heritage"]}
                 price="$210,000"
                 description="640 hp of legendary power."
-                gradientFrom="from-yellow-900"
-                gradientTo="to-gray-900"
+                image="https://cdn.pixabay.com/photo/2014/10/15/16/09/porsche-911-488622_1280.jpg"
               />
             </div>
 
@@ -190,8 +185,7 @@ export default function Index() {
                 tags={["Luxury", "Prestige"]}
                 price="$380,000"
                 description="Handcrafted mastery."
-                gradientFrom="from-slate-800"
-                gradientTo="to-slate-900"
+                image="https://cdn.pixabay.com/photo/2014/07/31/14/25/rolls-royce-403768_1280.jpg"
               />
             </div>
           </div>
