@@ -3,7 +3,6 @@ import PremiumButton from "./PremiumButton";
 
 interface VehicleCardProps {
   name: string;
-  image: string;
   tags: string[];
   price?: string;
   description?: string;
@@ -12,7 +11,6 @@ interface VehicleCardProps {
 
 export default function VehicleCard({
   name,
-  image,
   tags,
   price,
   description,
@@ -26,19 +24,15 @@ export default function VehicleCard({
         className
       )}
     >
-      {/* Image Container - Cinematic transition */}
-      <div className="relative h-64 md:h-72 overflow-hidden bg-graphite">
-        <img
-          src={image}
-          alt={name}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-115"
-        />
+      {/* Image Placeholder - Gradient showcase */}
+      <div className="relative h-64 md:h-72 overflow-hidden bg-gradient-to-br from-graphite-light to-graphite-dark flex items-center justify-center">
+        {/* Decorative elements */}
+        <div className="absolute inset-0 bg-gradient-to-b from-gold/20 via-transparent to-electric-blue/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-        {/* Layered overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background/40" />
-
-        {/* Enhanced hover overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/10 to-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        {/* Center accent circle */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-24 h-24 rounded-full border-2 border-gold/30 group-hover:border-gold/60 group-hover:scale-110 transition-all duration-500" />
+        </div>
 
         {/* Tags with elevated styling */}
         {tags.length > 0 && (
