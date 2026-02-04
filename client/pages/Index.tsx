@@ -128,6 +128,8 @@ export default function Index() {
                 tags={["Performance", "Luxury"]}
                 price="$180,000"
                 description="Twin-turbo precision."
+                gradientFrom="from-gray-800"
+                gradientTo="to-slate-900"
               />
             </div>
 
@@ -139,6 +141,8 @@ export default function Index() {
                 tags={["Electric", "Innovation"]}
                 price="$115,000"
                 description="0-60 in 1.99 seconds."
+                gradientFrom="from-blue-900"
+                gradientTo="to-slate-900"
               />
             </div>
 
@@ -150,6 +154,8 @@ export default function Index() {
                 tags={["Luxury", "SUV"]}
                 price="$145,000"
                 description="Premium commanding presence."
+                gradientFrom="from-amber-900"
+                gradientTo="to-gray-800"
               />
             </div>
 
@@ -161,6 +167,8 @@ export default function Index() {
                 tags={["Hypercar", "Exclusive"]}
                 price="$645,000"
                 description="Hybrid innovation redefined."
+                gradientFrom="from-red-900"
+                gradientTo="to-orange-900"
               />
             </div>
 
@@ -172,6 +180,8 @@ export default function Index() {
                 tags={["Speed", "Heritage"]}
                 price="$210,000"
                 description="640 hp of legendary power."
+                gradientFrom="from-yellow-900"
+                gradientTo="to-gray-900"
               />
             </div>
 
@@ -183,6 +193,8 @@ export default function Index() {
                 tags={["Luxury", "Prestige"]}
                 price="$380,000"
                 description="Handcrafted mastery."
+                gradientFrom="from-slate-800"
+                gradientTo="to-slate-900"
               />
             </div>
           </div>
