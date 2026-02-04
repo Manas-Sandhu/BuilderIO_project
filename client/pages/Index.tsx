@@ -192,16 +192,18 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Section Divider */}
+      <SectionDivider />
+
       {/* Why Choose Us Section */}
-      <section className="section-spacing gradient-premium">
+      <section className="section-spacing gradient-premium relative">
         <div className="container-premium">
-          <div className="text-center mb-12 md:mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-              Why Choose Apex Motors
+          <div className="mb-16 md:mb-20 space-y-4 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight">
+              Why Apex Motors
             </h2>
-            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              We're not just a dealership. We're stewards of automotive
-              excellence.
+            <p className="text-base text-foreground/70 max-w-2xl font-body">
+              Stewards of automotive excellence. Trusted by collectors worldwide.
             </p>
           </div>
 
@@ -209,50 +211,52 @@ export default function Index() {
             {[
               {
                 icon: Trophy,
-                title: "Curated Selection",
-                description:
-                  "Each vehicle undergoes rigorous inspection and authentication",
+                title: "Curated",
+                description: "Rigorous inspection and authentication.",
               },
               {
                 icon: Shield,
-                title: "Transparency",
-                description:
-                  "Complete service history and transparent pricing with no hidden fees",
+                title: "Transparent",
+                description: "Complete history. No hidden fees.",
               },
               {
                 icon: Gauge,
-                title: "Performance Verified",
-                description:
-                  "Every car tested for peak performance and safety standards",
+                title: "Verified",
+                description: "Peak performance and safety tested.",
               },
               {
                 icon: Sparkles,
-                title: "Premium Support",
-                description:
-                  "Dedicated concierge service and lifetime consultation included",
+                title: "Support",
+                description: "Dedicated concierge. Lifetime guidance.",
               },
             ].map((item, index) => (
               <div
                 key={index}
-                className="text-center group cursor-pointer animate-slide-up opacity-0"
+                className="group cursor-pointer animate-slide-up opacity-0 relative"
                 style={{
-                  animation: `slide-up 0.5s ease-out ${0.1 + index * 0.1}s forwards`,
+                  animation: `slide-up 0.6s ease-out ${0.1 + index * 0.1}s forwards`,
                 }}
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-xl bg-gradient-to-br from-gold/20 to-gold/10 border border-gold/30 group-hover:border-gold/60 group-hover:bg-gold/30 transition-all duration-300 mb-6">
-                  <item.icon
-                    size={32}
-                    className="text-gold group-hover:scale-110 transition-transform duration-300"
-                  />
+                {/* Card background with subtle depth */}
+                <div className="relative p-6 md:p-8 rounded-xl bg-gradient-to-br from-graphite-light/50 to-graphite-dark/30 border border-gold/10 group-hover:border-gold/40 transition-all duration-500 group-hover:shadow-xl group-hover:shadow-gold/10 group-hover:-translate-y-2">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br from-gold/30 to-gold/10 border border-gold/40 group-hover:bg-gold/40 group-hover:border-gold/60 group-hover:scale-110 transition-all duration-300 mb-4">
+                    <item.icon
+                      size={28}
+                      className="text-gold group-hover:text-gold-light transition-colors duration-300"
+                    />
+                  </div>
+
+                  <h3 className="text-lg md:text-xl font-display font-bold text-foreground mb-2 group-hover:text-gold transition-colors duration-300">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-xs md:text-sm text-foreground/70 group-hover:text-foreground/85 transition-colors duration-300 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
 
-                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-gold transition-colors duration-300">
-                  {item.title}
-                </h3>
-
-                <p className="text-sm text-foreground/70 group-hover:text-foreground/90 transition-colors duration-300">
-                  {item.description}
-                </p>
+                {/* Glow effect */}
+                <div className="absolute -inset-0.5 bg-gradient-to-br from-gold/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl" />
               </div>
             ))}
           </div>
