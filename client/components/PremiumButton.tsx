@@ -23,14 +23,15 @@ export default function PremiumButton({
   href,
 }: PremiumButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center font-semibold transition-all duration-300 ease-out hover:shadow-lg active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg";
+    "inline-flex items-center justify-center font-semibold transition-all duration-300 ease-out active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg relative group overflow-hidden";
 
   const variantStyles = {
     primary:
-      "bg-gold hover:bg-gold-light text-background hover:scale-105 active:bg-gold-dark",
+      "bg-gold text-background hover:scale-105 hover:shadow-xl hover:shadow-gold/40 active:bg-gold-dark",
     secondary:
-      "border-2 border-foreground text-foreground hover:bg-foreground hover:text-background hover:scale-105",
-    accent: "bg-electric-blue hover:brightness-110 text-white hover:scale-105",
+      "border-2 border-foreground text-foreground hover:bg-foreground hover:text-background hover:scale-105 hover:shadow-lg hover:shadow-gold/20",
+    accent:
+      "bg-electric-blue text-white hover:brightness-110 hover:scale-105 hover:shadow-xl hover:shadow-electric-blue/40",
   };
 
   const sizeStyles = {
@@ -46,10 +47,23 @@ export default function PremiumButton({
     className
   );
 
+  const buttonContent = (
+    <>
+      <span className="relative z-10">{children}</span>
+      {/* Glow backdrop for glow effect */}
+      {variant === "primary" && (
+        <div className="absolute inset-0 bg-gold/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl" />
+      )}
+      {variant === "accent" && (
+        <div className="absolute inset-0 bg-electric-blue/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl" />
+      )}
+    </>
+  );
+
   if (href) {
     return (
       <a href={href} className={buttonClass}>
-        {children}
+        {buttonContent}
       </a>
     );
   }
@@ -61,7 +75,7 @@ export default function PremiumButton({
       disabled={disabled}
       className={buttonClass}
     >
-      {children}
+      {buttonContent}
     </button>
   );
 }
