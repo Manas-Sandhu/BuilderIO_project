@@ -68,6 +68,8 @@ export default function Index() {
                 title="SUV"
                 description="Command and presence. Luxury meets capability."
                 icon={<Crown size={32} />}
+                gradientFrom="from-amber-900"
+                gradientTo="to-gray-800"
               />
             </div>
 
@@ -78,6 +80,8 @@ export default function Index() {
                 title="Sports"
                 description="Precision and adrenaline. Pure performance."
                 icon={<Zap size={32} />}
+                gradientFrom="from-red-900"
+                gradientTo="to-slate-900"
               />
             </div>
 
@@ -88,6 +92,8 @@ export default function Index() {
                 title="Electric"
                 description="Innovation and sustainability. The future now."
                 icon={<Sparkles size={32} />}
+                gradientFrom="from-blue-900"
+                gradientTo="to-slate-900"
               />
             </div>
           </div>
