@@ -68,8 +68,7 @@ export default function Index() {
                 title="SUV"
                 description="Command and presence. Luxury meets capability."
                 icon={<Crown size={32} />}
-                gradientFrom="from-amber-900"
-                gradientTo="to-gray-800"
+                image="https://cdn.pixabay.com/photo/2018/05/19/11/44/range-rover-3413126_1280.jpg"
               />
             </div>
 
@@ -80,8 +79,7 @@ export default function Index() {
                 title="Sports"
                 description="Precision and adrenaline. Pure performance."
                 icon={<Zap size={32} />}
-                gradientFrom="from-red-900"
-                gradientTo="to-slate-900"
+                image="https://cdn.pixabay.com/photo/2016/06/10/22/30/ferrari-1449035_1280.jpg"
               />
             </div>
 
@@ -92,8 +90,7 @@ export default function Index() {
                 title="Electric"
                 description="Innovation and sustainability. The future now."
                 icon={<Sparkles size={32} />}
-                gradientFrom="from-blue-900"
-                gradientTo="to-slate-900"
+                image="https://cdn.pixabay.com/photo/2021/03/19/11/05/tesla-6107077_1280.jpg"
               />
             </div>
           </div>
