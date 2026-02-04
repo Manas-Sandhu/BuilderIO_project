@@ -122,7 +122,7 @@ export default function Index() {
             }}>
               <VehicleCard
                 name="Mercedes-AMG GT 63 S"
-                image="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=500&q=80"
+                image="https://images.pexels.com/photos/3932168/pexels-photo-3932168.jpeg?auto=compress&cs=tinysrgb&w=600"
                 tags={["Performance", "Luxury"]}
                 price="$180,000"
                 description="Twin-turbo precision."
@@ -134,7 +134,7 @@ export default function Index() {
             }}>
               <VehicleCard
                 name="Tesla Model S Plaid"
-                image="https://images.unsplash.com/photo-1617654112368-307921291f42?w=500&q=80"
+                image="https://images.pexels.com/photos/3808519/pexels-photo-3808519.jpeg?auto=compress&cs=tinysrgb&w=600"
                 tags={["Electric", "Innovation"]}
                 price="$115,000"
                 description="0-60 in 1.99 seconds."
@@ -146,7 +146,7 @@ export default function Index() {
             }}>
               <VehicleCard
                 name="BMW X7 M50i"
-                image="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&q=80"
+                image="https://images.pexels.com/photos/3587620/pexels-photo-3587620.jpeg?auto=compress&cs=tinysrgb&w=600"
                 tags={["Luxury", "SUV"]}
                 price="$145,000"
                 description="Premium commanding presence."
@@ -158,7 +158,7 @@ export default function Index() {
             }}>
               <VehicleCard
                 name="Lamborghini Revuelto"
-                image="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500&q=80"
+                image="https://images.pexels.com/photos/3945688/pexels-photo-3945688.jpeg?auto=compress&cs=tinysrgb&w=600"
                 tags={["Hypercar", "Exclusive"]}
                 price="$645,000"
                 description="Hybrid innovation redefined."
@@ -170,7 +170,7 @@ export default function Index() {
             }}>
               <VehicleCard
                 name="Porsche 911 Turbo S"
-                image="https://images.unsplash.com/photo-1553882900-f2b06423f100?w=500&q=80"
+                image="https://images.pexels.com/photos/4362074/pexels-photo-4362074.jpeg?auto=compress&cs=tinysrgb&w=600"
                 tags={["Speed", "Heritage"]}
                 price="$210,000"
                 description="640 hp of legendary power."
@@ -182,7 +182,7 @@ export default function Index() {
             }}>
               <VehicleCard
                 name="Rolls-Royce Ghost"
-                image="https://images.unsplash.com/photo-1599156571362-3fdddc65aa6f?w=500&q=80"
+                image="https://images.pexels.com/photos/3922519/pexels-photo-3922519.jpeg?auto=compress&cs=tinysrgb&w=600"
                 tags={["Luxury", "Prestige"]}
                 price="$380,000"
                 description="Handcrafted mastery."
