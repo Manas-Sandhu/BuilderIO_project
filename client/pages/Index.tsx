@@ -67,7 +67,7 @@ export default function Index() {
               <CategoryCard
                 title="SUV"
                 description="Command and presence. Luxury meets capability."
-                image="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=600&q=80"
+                image="https://images.pexels.com/photos/3587620/pexels-photo-3587620.jpeg?auto=compress&cs=tinysrgb&w=800"
                 icon={<Crown size={32} />}
               />
             </div>
@@ -78,7 +78,7 @@ export default function Index() {
               <CategoryCard
                 title="Sports"
                 description="Precision and adrenaline. Pure performance."
-                image="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80"
+                image="https://images.pexels.com/photos/3932168/pexels-photo-3932168.jpeg?auto=compress&cs=tinysrgb&w=800"
                 icon={<Zap size={32} />}
               />
             </div>
@@ -89,7 +89,7 @@ export default function Index() {
               <CategoryCard
                 title="Electric"
                 description="Innovation and sustainability. The future now."
-                image="https://images.unsplash.com/photo-1617654112368-307921291f42?w=600&q=80"
+                image="https://images.pexels.com/photos/3808519/pexels-photo-3808519.jpeg?auto=compress&cs=tinysrgb&w=800"
                 icon={<Sparkles size={32} />}
               />
             </div>
