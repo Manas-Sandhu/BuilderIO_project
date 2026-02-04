@@ -97,91 +97,95 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Section Divider */}
+      <SectionDivider />
+
       {/* Featured Cars Section */}
       <section
         id="collection"
-        className="section-spacing bg-background"
+        className="section-spacing bg-background relative"
       >
         <div className="container-premium">
-          <div className="text-center mb-12 md:mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+          <div className="mb-16 md:mb-20 space-y-4 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight">
               Featured Vehicles
             </h2>
-            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Handpicked masterpieces from our premium inventory
+            <p className="text-base text-foreground/70 max-w-2xl font-body">
+              Handpicked masterpieces from our collection.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {/* Asymmetrical staggered grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 auto-rows-max">
             <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.5s ease-out 0.1s forwards",
+              animation: "slide-up 0.6s ease-out 0.1s forwards",
             }}>
               <VehicleCard
                 name="Mercedes-AMG GT 63 S"
                 image="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=500&q=80"
                 tags={["Performance", "Luxury"]}
                 price="$180,000"
-                description="Twin-turbo V8 with 630 hp of pure precision engineering."
+                description="Twin-turbo precision."
               />
             </div>
 
-            <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.5s ease-out 0.2s forwards",
+            <div className="animate-slide-up opacity-0 md:translate-y-12" style={{
+              animation: "slide-up 0.6s ease-out 0.2s forwards",
             }}>
               <VehicleCard
                 name="Tesla Model S Plaid"
                 image="https://images.unsplash.com/photo-1617654112368-307921291f42?w=500&q=80"
                 tags={["Electric", "Innovation"]}
                 price="$115,000"
-                description="0-60 mph in 1.99 seconds. The future of performance is now."
+                description="0-60 in 1.99 seconds."
               />
             </div>
 
             <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.5s ease-out 0.3s forwards",
+              animation: "slide-up 0.6s ease-out 0.3s forwards",
             }}>
               <VehicleCard
                 name="BMW X7 M50i"
                 image="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&q=80"
                 tags={["Luxury", "SUV"]}
                 price="$145,000"
-                description="Premium luxury SUV with commanding presence and sophisticated technology."
+                description="Premium commanding presence."
               />
             </div>
 
             <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.5s ease-out 0.4s forwards",
+              animation: "slide-up 0.6s ease-out 0.4s forwards",
             }}>
               <VehicleCard
                 name="Lamborghini Revuelto"
                 image="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500&q=80"
                 tags={["Hypercar", "Exclusive"]}
                 price="$645,000"
-                description="Revolutionary hybrid hypercar redefining performance and sustainability."
+                description="Hybrid innovation redefined."
               />
             </div>
 
-            <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.5s ease-out 0.5s forwards",
+            <div className="animate-slide-up opacity-0 md:translate-y-12" style={{
+              animation: "slide-up 0.6s ease-out 0.5s forwards",
             }}>
               <VehicleCard
                 name="Porsche 911 Turbo S"
                 image="https://images.unsplash.com/photo-1553882900-f2b06423f100?w=500&q=80"
                 tags={["Speed", "Heritage"]}
                 price="$210,000"
-                description="Legendary performance with 640 hp of turbo-charged excellence."
+                description="640 hp of legendary power."
               />
             </div>
 
             <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.5s ease-out 0.6s forwards",
+              animation: "slide-up 0.6s ease-out 0.6s forwards",
             }}>
               <VehicleCard
                 name="Rolls-Royce Ghost"
                 image="https://images.unsplash.com/photo-1599156571362-3fdddc65aa6f?w=500&q=80"
                 tags={["Luxury", "Prestige"]}
                 price="$380,000"
-                description="The pinnacle of handcrafted luxury and refinement."
+                description="Handcrafted mastery."
               />
             </div>
           </div>
