@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import PremiumButton from "./PremiumButton";
+import { Zap } from "lucide-react";
 
 interface VehicleCardProps {
   name: string;
@@ -7,6 +8,8 @@ interface VehicleCardProps {
   price?: string;
   description?: string;
   className?: string;
+  gradientFrom?: string;
+  gradientTo?: string;
 }
 
 export default function VehicleCard({
@@ -15,6 +18,8 @@ export default function VehicleCard({
   price,
   description,
   className,
+  gradientFrom = "from-slate-800",
+  gradientTo = "to-slate-900",
 }: VehicleCardProps) {
   return (
     <div
@@ -24,15 +29,28 @@ export default function VehicleCard({
         className
       )}
     >
-      {/* Image Placeholder - Gradient showcase */}
-      <div className="relative h-64 md:h-72 overflow-hidden bg-gradient-to-br from-graphite-light to-graphite-dark flex items-center justify-center">
-        {/* Decorative elements */}
-        <div className="absolute inset-0 bg-gradient-to-b from-gold/20 via-transparent to-electric-blue/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      {/* Vehicle Showcase Area - Gradient with decorative elements */}
+      <div className={cn("relative h-64 md:h-72 overflow-hidden flex items-center justify-center", `bg-gradient-to-br ${gradientFrom} ${gradientTo}`)}>
+        {/* Layered gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-gold/20 via-transparent to-electric-blue/15 opacity-50 group-hover:opacity-30 transition-opacity duration-500" />
 
-        {/* Center accent circle */}
+        {/* Center accent - Car silhouette representation */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-24 h-24 rounded-full border-2 border-gold/30 group-hover:border-gold/60 group-hover:scale-110 transition-all duration-500" />
+          <div className="relative w-32 h-32">
+            {/* Outer ring */}
+            <div className="absolute inset-0 rounded-full border-2 border-gold/40 group-hover:border-gold/70 transition-all duration-500" />
+
+            {/* Inner circle with icon */}
+            <div className="absolute inset-4 rounded-full border border-gold/30 flex items-center justify-center group-hover:scale-110 transition-all duration-500">
+              <Zap className="w-8 h-8 text-gold/60 group-hover:text-gold transition-colors duration-500" />
+            </div>
+          </div>
         </div>
+
+        {/* Pattern overlay */}
+        <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-500" style={{
+          backgroundImage: `repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(218,169,32,0.03) 20px, rgba(218,169,32,0.03) 40px)`
+        }} />
 
         {/* Tags with elevated styling */}
         {tags.length > 0 && (
