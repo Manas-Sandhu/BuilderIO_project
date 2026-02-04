@@ -30,7 +30,7 @@ export default function Index() {
       <HeroSection
         title="Experience the Art of Performance"
         subtitle="Discover our curated collection of luxury, sports, and electric vehicles designed for those who demand excellence. Every drive is a masterpiece."
-        backgroundImage=""
+        backgroundImage="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23b8860b;stop-opacity:0.2'/%3E%3Cstop offset='100%25' style='stop-color:%231e90ff;stop-opacity:0.1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1920' height='1080' fill='%23131313'/%3E%3Crect width='1920' height='1080' fill='url(%23grad)'/%3E%3C/svg%3E"
         primaryCTA={{
           label: "Explore Collection",
           onClick: handleExplore,
