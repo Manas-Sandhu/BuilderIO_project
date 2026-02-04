@@ -21,7 +21,7 @@ export default function CategoryCard({
       className={cn(
         "group relative overflow-hidden rounded-xl h-96 md:h-80 cursor-pointer transition-all duration-500",
         "hover:shadow-2xl hover:shadow-gold/20 hover:-translate-y-2",
-        className
+        className,
       )}
     >
       {/* Background Image */}

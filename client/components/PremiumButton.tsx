@@ -44,7 +44,7 @@ export default function PremiumButton({
     baseStyles,
     variantStyles[variant],
     sizeStyles[size],
-    className
+    className,
   );
 
   const buttonContent = (

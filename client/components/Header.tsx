@@ -17,7 +17,10 @@ export default function Header() {
       <div className="container-premium">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo - Clickable brand link */}
-          <a href="#" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <a
+            href="#"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+          >
             <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-gradient-to-br from-gold to-gold-light flex items-center justify-center flex-shrink-0">
               <span className="text-background font-bold text-lg md:text-xl">
                 A

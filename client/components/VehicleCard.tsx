@@ -24,7 +24,7 @@ export default function VehicleCard({
       className={cn(
         "group relative overflow-hidden rounded-xl bg-card border border-border/50 transition-all duration-500",
         "hover:border-gold/60 hover:shadow-2xl hover:shadow-gold/15 hover:-translate-y-3",
-        className
+        className,
       )}
     >
       {/* Vehicle Image Area */}

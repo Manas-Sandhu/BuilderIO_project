@@ -23,7 +23,7 @@ export function useScrollAnimation(options: ScrollAnimationOptions = {}) {
       {
         threshold: options.threshold ?? 0.1,
         rootMargin: options.rootMargin ?? "0px",
-      }
+      },
     );
 
     if (elementRef.current) {

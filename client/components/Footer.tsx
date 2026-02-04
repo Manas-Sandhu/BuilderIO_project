@@ -34,21 +34,18 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {[
-                "Explore Collection",
-                "Test Drive",
-                "About Us",
-                "Blog",
-              ].map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
-                    className="text-sm text-foreground/70 hover:text-gold transition-colors duration-300"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              {["Explore Collection", "Test Drive", "About Us", "Blog"].map(
+                (link) => (
+                  <li key={link}>
+                    <a
+                      href="#"
+                      className="text-sm text-foreground/70 hover:text-gold transition-colors duration-300"
+                    >
+                      {link}
+                    </a>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
 
@@ -56,21 +53,18 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-foreground mb-4">Support</h4>
             <ul className="space-y-2">
-              {[
-                "Customer Service",
-                "Documentation",
-                "FAQ",
-                "Contact",
-              ].map((link) => (
-                <li key={link}>
-                  <a
-                    href="#"
-                    className="text-sm text-foreground/70 hover:text-gold transition-colors duration-300"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              {["Customer Service", "Documentation", "FAQ", "Contact"].map(
+                (link) => (
+                  <li key={link}>
+                    <a
+                      href="#"
+                      className="text-sm text-foreground/70 hover:text-gold transition-colors duration-300"
+                    >
+                      {link}
+                    </a>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
 

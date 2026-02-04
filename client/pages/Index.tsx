@@ -4,14 +4,7 @@ import CategoryCard from "@/components/CategoryCard";
 import VehicleCard from "@/components/VehicleCard";
 import PremiumButton from "@/components/PremiumButton";
 import SectionDivider from "@/components/SectionDivider";
-import {
-  Zap,
-  Gauge,
-  Crown,
-  Shield,
-  Sparkles,
-  Trophy,
-} from "lucide-react";
+import { Zap, Gauge, Crown, Shield, Sparkles, Trophy } from "lucide-react";
 
 export default function Index() {
   const handleExplore = () => {
@@ -61,9 +54,12 @@ export default function Index() {
 
           {/* Staggered grid layout for visual interest */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.6s ease-out 0.1s forwards",
-            }}>
+            <div
+              className="animate-slide-up opacity-0"
+              style={{
+                animation: "slide-up 0.6s ease-out 0.1s forwards",
+              }}
+            >
               <CategoryCard
                 title="SUV"
                 description="Command and presence. Luxury meets capability."
@@ -72,9 +68,12 @@ export default function Index() {
               />
             </div>
 
-            <div className="animate-slide-up opacity-0 md:translate-y-8" style={{
-              animation: "slide-up 0.6s ease-out 0.2s forwards",
-            }}>
+            <div
+              className="animate-slide-up opacity-0 md:translate-y-8"
+              style={{
+                animation: "slide-up 0.6s ease-out 0.2s forwards",
+              }}
+            >
               <CategoryCard
                 title="Sports"
                 description="Precision and adrenaline. Pure performance."
@@ -83,9 +82,12 @@ export default function Index() {
               />
             </div>
 
-            <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.6s ease-out 0.3s forwards",
-            }}>
+            <div
+              className="animate-slide-up opacity-0"
+              style={{
+                animation: "slide-up 0.6s ease-out 0.3s forwards",
+              }}
+            >
               <CategoryCard
                 title="Electric"
                 description="Innovation and sustainability. The future now."
@@ -117,9 +119,12 @@ export default function Index() {
 
           {/* Asymmetrical staggered grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 auto-rows-max">
-            <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.6s ease-out 0.1s forwards",
-            }}>
+            <div
+              className="animate-slide-up opacity-0"
+              style={{
+                animation: "slide-up 0.6s ease-out 0.1s forwards",
+              }}
+            >
               <VehicleCard
                 name="Mercedes-AMG GT 63 S"
                 tags={["Performance", "Luxury"]}
@@ -129,9 +134,12 @@ export default function Index() {
               />
             </div>
 
-            <div className="animate-slide-up opacity-0 md:translate-y-12" style={{
-              animation: "slide-up 0.6s ease-out 0.2s forwards",
-            }}>
+            <div
+              className="animate-slide-up opacity-0 md:translate-y-12"
+              style={{
+                animation: "slide-up 0.6s ease-out 0.2s forwards",
+              }}
+            >
               <VehicleCard
                 name="Tesla Model S Plaid"
                 tags={["Electric", "Innovation"]}
@@ -141,9 +149,12 @@ export default function Index() {
               />
             </div>
 
-            <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.6s ease-out 0.3s forwards",
-            }}>
+            <div
+              className="animate-slide-up opacity-0"
+              style={{
+                animation: "slide-up 0.6s ease-out 0.3s forwards",
+              }}
+            >
               <VehicleCard
                 name="BMW X7 M50i"
                 tags={["Luxury", "SUV"]}
@@ -153,9 +164,12 @@ export default function Index() {
               />
             </div>
 
-            <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.6s ease-out 0.4s forwards",
-            }}>
+            <div
+              className="animate-slide-up opacity-0"
+              style={{
+                animation: "slide-up 0.6s ease-out 0.4s forwards",
+              }}
+            >
               <VehicleCard
                 name="Lamborghini Revuelto"
                 tags={["Hypercar", "Exclusive"]}
@@ -165,9 +179,12 @@ export default function Index() {
               />
             </div>
 
-            <div className="animate-slide-up opacity-0 md:translate-y-12" style={{
-              animation: "slide-up 0.6s ease-out 0.5s forwards",
-            }}>
+            <div
+              className="animate-slide-up opacity-0 md:translate-y-12"
+              style={{
+                animation: "slide-up 0.6s ease-out 0.5s forwards",
+              }}
+            >
               <VehicleCard
                 name="Porsche 911 Turbo S"
                 tags={["Speed", "Heritage"]}
@@ -177,9 +194,12 @@ export default function Index() {
               />
             </div>
 
-            <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.6s ease-out 0.6s forwards",
-            }}>
+            <div
+              className="animate-slide-up opacity-0"
+              style={{
+                animation: "slide-up 0.6s ease-out 0.6s forwards",
+              }}
+            >
               <VehicleCard
                 name="Rolls-Royce Ghost"
                 tags={["Luxury", "Prestige"]}
@@ -203,7 +223,8 @@ export default function Index() {
               Why Apex Motors
             </h2>
             <p className="text-base text-foreground/70 max-w-2xl font-body">
-              Stewards of automotive excellence. Trusted by collectors worldwide.
+              Stewards of automotive excellence. Trusted by collectors
+              worldwide.
             </p>
           </div>
 
@@ -295,25 +316,18 @@ export default function Index() {
                 Begin Your Journey
               </h2>
               <p className="text-base md:text-lg text-foreground/75 leading-relaxed font-body mx-auto">
-                Experience automotive excellence. Private test drive, dedicated guidance, exclusive access to our collection.
+                Experience automotive excellence. Private test drive, dedicated
+                guidance, exclusive access to our collection.
               </p>
             </div>
 
             {/* CTA Buttons - Generous spacing, centered */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-              <PremiumButton
-                variant="primary"
-                size="lg"
-                className="relative"
-              >
+              <PremiumButton variant="primary" size="lg" className="relative">
                 Schedule Test Drive
               </PremiumButton>
 
-              <PremiumButton
-                variant="secondary"
-                size="lg"
-                className="relative"
-              >
+              <PremiumButton variant="secondary" size="lg" className="relative">
                 Contact Specialist
               </PremiumButton>
             </div>
@@ -325,9 +339,13 @@ export default function Index() {
               </p>
               <div className="flex justify-center gap-4">
                 <span className="text-xs text-foreground/50">•</span>
-                <span className="text-xs text-foreground/50">Expert guidance included</span>
+                <span className="text-xs text-foreground/50">
+                  Expert guidance included
+                </span>
                 <span className="text-xs text-foreground/50">•</span>
-                <span className="text-xs text-foreground/50">Flexible scheduling</span>
+                <span className="text-xs text-foreground/50">
+                  Flexible scheduling
+                </span>
                 <span className="text-xs text-foreground/50">•</span>
               </div>
             </div>
