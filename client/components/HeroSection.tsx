@@ -23,19 +23,14 @@ export default function HeroSection({
   secondaryCTA,
 }: HeroSectionProps) {
   return (
-    <section className="relative w-full h-screen min-h-[600px] overflow-hidden">
-      {/* Background Image - Right aligned for asymmetry */}
-      <div
-        className="absolute inset-0 bg-cover bg-right-top md:bg-center scale-105"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      />
-
-      {/* Layered Overlay - Creates depth */}
-      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/30" />
+    <section className="relative w-full h-screen min-h-[600px] overflow-hidden bg-gradient-to-br from-background via-graphite-dark to-background">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-graphite-dark/50" />
       <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background/60" />
 
-      {/* Subtle glow accent - bottom right */}
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -z-10" />
+      {/* Subtle glow accents */}
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold/8 rounded-full blur-3xl -z-10" />
+      <div className="absolute -top-40 left-1/3 w-96 h-96 bg-electric-blue/5 rounded-full blur-3xl -z-10" />
 
       {/* Content - Asymmetrical positioning */}
       <div className="relative h-full flex items-center">
