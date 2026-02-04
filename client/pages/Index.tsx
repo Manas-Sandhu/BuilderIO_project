@@ -41,51 +41,54 @@ export default function Index() {
         }}
       />
 
+      {/* Section Divider */}
+      <SectionDivider />
+
       {/* Car Categories Section */}
       <section
         id="explore"
-        className="section-spacing gradient-premium"
+        className="section-spacing gradient-premium relative"
       >
         <div className="container-premium">
-          <div className="text-center mb-12 md:mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
-              Explore Our Collections
+          <div className="mb-16 md:mb-20 space-y-4 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight">
+              Explore Collections
             </h2>
-            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Each category represents the pinnacle of automotive engineering and
-              design
+            <p className="text-base text-foreground/70 max-w-2xl font-body">
+              Each curated selection represents automotive mastery.
             </p>
           </div>
 
+          {/* Staggered grid layout for visual interest */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.5s ease-out 0.1s forwards",
+              animation: "slide-up 0.6s ease-out 0.1s forwards",
             }}>
               <CategoryCard
-                title="SUV Collection"
-                description="Luxurious and commanding presence. Performance meets practicality in every mile."
+                title="SUV"
+                description="Command and presence. Luxury meets capability."
                 image="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=600&q=80"
                 icon={<Crown size={32} />}
               />
             </div>
 
-            <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.5s ease-out 0.2s forwards",
+            <div className="animate-slide-up opacity-0 md:translate-y-8" style={{
+              animation: "slide-up 0.6s ease-out 0.2s forwards",
             }}>
               <CategoryCard
-                title="Sports Cars"
-                description="Pure adrenaline and precision engineering. Built for the ultimate driving experience."
+                title="Sports"
+                description="Precision and adrenaline. Pure performance."
                 image="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80"
                 icon={<Zap size={32} />}
               />
             </div>
 
             <div className="animate-slide-up opacity-0" style={{
-              animation: "slide-up 0.5s ease-out 0.3s forwards",
+              animation: "slide-up 0.6s ease-out 0.3s forwards",
             }}>
               <CategoryCard
-                title="Electric Vehicles"
-                description="The future of mobility. Cutting-edge technology with zero emissions."
+                title="Electric"
+                description="Innovation and sustainability. The future now."
                 image="https://images.unsplash.com/photo-1617654112368-307921291f42?w=600&q=80"
                 icon={<Sparkles size={32} />}
               />
