@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import CategoryCard from "@/components/CategoryCard";
 import VehicleCard from "@/components/VehicleCard";
 import PremiumButton from "@/components/PremiumButton";
+import SectionDivider from "@/components/SectionDivider";
 import {
   Zap,
   Gauge,
