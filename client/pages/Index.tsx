@@ -30,7 +30,7 @@ export default function Index() {
       <HeroSection
         title="Experience the Art of Performance"
         subtitle="Discover our curated collection of luxury, sports, and electric vehicles designed for those who demand excellence. Every drive is a masterpiece."
-        backgroundImage="https://images.pexels.com/photos/3587620/pexels-photo-3587620.jpeg?auto=compress&cs=tinysrgb&w=1920"
+        backgroundImage=""
         primaryCTA={{
           label: "Explore Collection",
           onClick: handleExplore,
