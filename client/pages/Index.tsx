@@ -263,49 +263,74 @@ export default function Index() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Section Divider */}
+      <SectionDivider />
+
+      {/* Final CTA Section - Calm, powerful, isolated */}
       <section
         id="contact"
-        className="section-spacing bg-gradient-to-br from-background via-graphite-dark to-background relative overflow-hidden"
+        className="relative py-24 md:py-32 lg:py-40 overflow-hidden"
       >
-        {/* Decorative Elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-electric-blue/5 rounded-full blur-3xl -z-10" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -z-10" />
+        {/* Premium background with depth */}
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-graphite-dark to-background -z-20" />
 
-        <div className="container-premium">
-          <div className="text-center max-w-3xl mx-auto animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
-              Ready to Experience Excellence?
-            </h2>
+        {/* Decorative ambient glows */}
+        <div className="absolute -top-40 right-0 w-96 h-96 bg-electric-blue/8 rounded-full blur-3xl -z-10 opacity-60" />
+        <div className="absolute -bottom-40 left-0 w-96 h-96 bg-gold/8 rounded-full blur-3xl -z-10 opacity-60" />
 
-            <p className="text-lg text-foreground/80 mb-8">
-              Join our exclusive circle of discerning collectors. Schedule your
-              private test drive today and experience automotive mastery like
-              never before.
-            </p>
+        {/* Soft gradient divider lines */}
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="container-premium relative">
+          {/* Centered, spacious layout emphasizing isolation */}
+          <div className="max-w-2xl mx-auto text-center space-y-8 animate-fade-in">
+            {/* Accent line */}
+            <div className="flex justify-center">
+              <div className="w-12 h-1 bg-gradient-to-r from-gold/0 via-gold to-gold/0" />
+            </div>
+
+            {/* Primary headline - Confident invitation */}
+            <div className="space-y-4">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight tracking-tight">
+                Begin Your Journey
+              </h2>
+              <p className="text-base md:text-lg text-foreground/75 leading-relaxed font-body mx-auto">
+                Experience automotive excellence. Private test drive, dedicated guidance, exclusive access to our collection.
+              </p>
+            </div>
+
+            {/* CTA Buttons - Generous spacing, centered */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
               <PremiumButton
                 variant="primary"
                 size="lg"
-                className="sm:w-auto"
+                className="relative"
               >
-                Book Test Drive Now
+                Schedule Test Drive
               </PremiumButton>
 
               <PremiumButton
                 variant="secondary"
                 size="lg"
-                className="sm:w-auto"
+                className="relative"
               >
-                Contact Concierge
+                Contact Specialist
               </PremiumButton>
             </div>
 
-            <p className="text-sm text-foreground/60 mt-8">
-              Response within 2 hours • Dedicated specialist assigned •
-              Flexible scheduling
-            </p>
+            {/* Trust indicators - Minimal, elegant */}
+            <div className="pt-8 space-y-3">
+              <p className="text-xs md:text-sm text-foreground/60 tracking-wide uppercase font-semibold letter-spacing">
+                Concierge Response: Within 2 Hours
+              </p>
+              <div className="flex justify-center gap-4">
+                <span className="text-xs text-foreground/50">•</span>
+                <span className="text-xs text-foreground/50">Expert guidance included</span>
+                <span className="text-xs text-foreground/50">•</span>
+                <span className="text-xs text-foreground/50">Flexible scheduling</span>
+                <span className="text-xs text-foreground/50">•</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
