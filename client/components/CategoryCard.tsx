@@ -6,8 +6,7 @@ interface CategoryCardProps {
   description: string;
   icon?: ReactNode;
   className?: string;
-  gradientFrom?: string;
-  gradientTo?: string;
+  image?: string;
 }
 
 export default function CategoryCard({
@@ -15,25 +14,29 @@ export default function CategoryCard({
   description,
   icon,
   className,
-  gradientFrom = "from-amber-900",
-  gradientTo = "to-gray-800",
+  image,
 }: CategoryCardProps) {
   return (
     <div
       className={cn(
         "group relative overflow-hidden rounded-xl h-96 md:h-80 cursor-pointer transition-all duration-500",
         "hover:shadow-2xl hover:shadow-gold/20 hover:-translate-y-2",
-        `bg-gradient-to-br ${gradientFrom} ${gradientTo}`,
         className
       )}
     >
-      {/* Decorative gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gold/15 via-transparent to-electric-blue/10 opacity-70 transition-opacity duration-700 group-hover:opacity-40" />
+      {/* Background Image */}
+      {image && (
+        <div
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+          style={{ backgroundImage: `url(${image})` }}
+        />
+      )}
 
-      {/* Subtle pattern overlay */}
-      <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500" style={{
-        backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(218,169,32,0.05) 10px, rgba(218,169,32,0.05) 20px)`
-      }} />
+      {/* Dark gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/70 to-background/90" />
+
+      {/* Hover effect overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/30 to-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       {/* Layered overlays for depth */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/30 to-background/80" />
